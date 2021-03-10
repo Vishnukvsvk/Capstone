@@ -123,7 +123,7 @@ if isempty(filterCoeffs)
   filterCoeffs = rcosdesign(0.35, 4, sps);
 end
 % Modulate
-syms = qammod(x,64,'UnitAveragePower',true);
+syms = qammod(x,64,'UnitAveragePower',false);
 % Pulse shape
 y = filter(filterCoeffs, 1, upsample(syms,sps));
 end
@@ -159,7 +159,7 @@ if isempty(filterCoeffs)
   filterCoeffs = rcosdesign(0.35, 4, sps);
 end
 % Modulate
-syms = qammod(x,1024,'UnitAveragePower',true);
+syms = qammod(x,1024,'UnitAveragePower',false);
 % Pulse shape
 y = filter(filterCoeffs, 1, upsample(syms,sps));
 end
