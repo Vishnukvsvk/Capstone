@@ -3,6 +3,9 @@ percentTrainingSamples = 80;
 percentValidationSamples = 10;
 percentTestSamples = 10;
 modulationTypes = categorical(["BPSK", "QPSK", "8PSK", "16QAM", "64QAM", "256QAM","1024QAM","PAM4", "GFSK", "CPFSK","DSB-AM","SSB-AM","B-FM"]);
+sps = 8;                % Samples per symbol
+spf = 1024;             % Samples per frame
+symbolsPerFrame = spf / sps;
 
 %%%%%%%%%%%
 
