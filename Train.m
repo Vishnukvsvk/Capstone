@@ -29,4 +29,4 @@ options = helperModClassTrainingOptions(maxEpochs,miniBatchSize,...
 
 
 fprintf('%s - Training the network\n', datestr(toc/86400,'HH:MM:SS'))
-trainedNet = trainNetwork(rxTrainFrames,rxTrainLabels,modClassNet,options);
+[trainedNet,info] = trainNetwork(rxTrainFrames,rxTrainLabels,modClassNet,options);
