@@ -1,0 +1,15 @@
+   
+info = 
+
+  struct with fields:
+
+               TrainingLoss: [1×4872 double]
+           TrainingAccuracy: [1×4872 double]
+             ValidationLoss: [1×4872 double]
+         ValidationAccuracy: [1×4872 double]
+              BaseLearnRate: [1×4872 double]
+        FinalValidationLoss: 0.3956
+    FinalValidationAccuracy: 79.8308
+
+
+Test accuracy: 79.8308%
