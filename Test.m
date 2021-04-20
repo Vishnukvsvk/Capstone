@@ -16,6 +16,6 @@ disp("Test accuracy: " + testAccuracy*100 + "%")
 
 figure
 cm = confusionchart(rxTestLabels, rxTestPred);
-cm.Title = 'Confusion Matrix for Test Data';
+%cm.Title = 'Confusion Matrix for Test Data';
 cm.RowSummary = 'row-normalized';
 cm.Parent.Position = [cm.Parent.Position(1:2) 740 424];
