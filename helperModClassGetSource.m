@@ -13,22 +13,22 @@ switch modType
   case {"BPSK","GFSK","CPFSK"}
     M = 2;
     src = @()randi([0 M-1],spf/sps,1);
-  case {"QPSK","PAM4"}
+  case {"QPSK","4-PAM"}
     M = 4;
     src = @()randi([0 M-1],spf/sps,1);
-  case "8PSK"
+  case "8-PSK"
     M = 8;
     src = @()randi([0 M-1],spf/sps,1);
-  case "16QAM"
+  case "16-QAM"
     M = 16;
     src = @()randi([0 M-1],spf/sps,1);
-  case "64QAM"
+  case "64-QAM"
     M = 64;
     src = @()randi([0 M-1],spf/sps,1);
-  case "256QAM"
+  case "256-QAM"
     M = 256;
     src = @()randi([0 M-1],spf/sps,1);
-  case "1024QAM"
+  case "1024-QAM"
     M = 1024;
     src = @()randi([0 M-1],spf/sps,1);
   case {"B-FM","DSB-AM","SSB-AM"}
