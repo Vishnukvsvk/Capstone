@@ -1,4 +1,4 @@
-modulationTypes = categorical(["BPSK", "QPSK", "8PSK", "16QAM", "64QAM", "256QAM","1024QAM","PAM4", "GFSK", "CPFSK","DSB-AM","SSB-AM","B-FM"]);
+modulationTypes = categorical(["BPSK", "QPSK", "8-PSK", "16-QAM", "64-QAM", "256-QAM","1024-QAM","4-PAM", "GFSK", "CPFSK","DSB-AM","SSB-AM","B-FM"]);
 
 numFramesPerModType = 10000;
 percentTrainingSamples = 80;
