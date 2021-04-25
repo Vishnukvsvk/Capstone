@@ -13,21 +13,21 @@ switch modType
     modulator = @(x)bpskModulator(x,sps);
   case "QPSK"
     modulator = @(x)qpskModulator(x,sps);
-  case "8PSK"
+  case "8-PSK"
     modulator = @(x)psk8Modulator(x,sps);
-  case "16QAM"
+  case "16-QAM"
     modulator = @(x)qam16Modulator(x,sps);
-  case "64QAM"
+  case "64-QAM"
     modulator = @(x)qam64Modulator(x,sps);
-  case "256QAM"
+  case "256-QAM"
     modulator = @(x)qam256Modulator(x,sps);
-  case "1024QAM"
+  case "1024-QAM"
     modulator = @(x)qam1024Modulator(x,sps);
   case "GFSK"
     modulator = @(x)gfskModulator(x,sps);
   case "CPFSK"
     modulator = @(x)cpfskModulator(x,sps);
-  case "PAM4"
+  case "4-PAM"
     modulator = @(x)pam4Modulator(x,sps);
   case "B-FM"
     modulator = @(x)bfmModulator(x, fs);
